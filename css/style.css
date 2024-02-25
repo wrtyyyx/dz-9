@@ -1,4 +1,25 @@
 @import url(reset.css);
+@font-face {
+    font-family: 'Anta';
+    src: url('/fonts/Anta-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* global */
 .container{
@@ -22,17 +43,19 @@
     background: #000;
 	font-size: 14px;
 	font-weight: 500;
+   
 }
 
 .header-list{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 30px; 
+    font-family: 'Anta';
 }
 .header-list li{
     position: relative;
 }
-.header-list  a{
+.list-item{
     text-decoration: none;
     color: aliceblue;
     padding: 10px 20px;
@@ -41,6 +64,7 @@
     text-transform: uppercase;
     cursor: pointer;
     display: block;
+   
 }
 
 .header-list a:hover{
@@ -52,12 +76,24 @@
     display: none;
     top: 100%;
     padding-top: 25px;
-    z-index: 1
+    z-index: 1;
+    font-family:'Roboto';
+
 }
 .header-list li:hover .header-second-list{
     display: block; 
 }
 
+.header-third-list{
+    position: relative;
+    right: 100%;
+    top: -50px;
+    display: none;
+    font-family: 'Montserrat';
+}
+.header-third-list li{
+    display: block;
+}
 .third > div + div{
     width: 800px;
     height: auto;
