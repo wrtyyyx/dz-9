@@ -91,7 +91,7 @@
     display: none;
     font-family: 'Montserrat';
 }
-.header-third-list li{
+.header-second-list li:hover .header-third-list{
     display: block;
 }
 .third > div + div{
