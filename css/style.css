@@ -1,0 +1,236 @@
+@import url(reset.css);
+
+/* global */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    z-index: -1;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.outline div{
+    outline: 3px solid red;
+}
+/* HEADER */
+
+.header-main{
+    padding: 24px 0 25px;
+    background: #000;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.header-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.header-list li{
+    position: relative;
+}
+.header-list  a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 20px;
+    background: orange;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+}
+
+.header-list a:hover{
+    background-color: red;
+}
+
+.header-second-list{
+    position: absolute;
+    display: none;
+    top: 100%;
+    padding-top: 25px;
+    z-index: 1
+}
+.header-list li:hover .header-second-list{
+    display: block; 
+}
+
+.third > div + div{
+    width: 800px;
+    height: auto;
+}
+.third > div{
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+}
+.in{
+    display: inline-block;
+}
+.float{
+    float: left;
+}
+.flex{
+    display: flex;
+}
+.ha{
+    height: auto;
+}
+.w-400{
+    width: 400px;
+}
+.w-800{
+    width: 800px;
+}
+.h-400{
+    height: 400px;
+}
+.h-200{
+    height: 200px;
+}
+.h-133{
+    height: 133.3px;
+}
+.h-100{
+    height: 100px;
+}
+.bg-blue{
+    background: aqua;
+}
+
+
+.fz-0{
+    font-size: 0;
+}
+
+.fz-1{
+    font-size: 20px;
+}
+.bg-green{
+    background: lawngreen;
+}
+
+.bg-orange{
+    background: orange;
+}
+
+.page{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.head h1{
+    background-color: black;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+.head{
+    background-color: #000;
+}
+
+.table-data{
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+.table-data td{
+    border: 3px solid red;
+    width: 150px;
+    height: 100px;
+    font-size: 30px;
+    padding:15px;
+    text-align: center;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+.head h1{
+    background-color: black;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.table-section{
+    margin: 60px 0;
+}
+
+.data{
+    width: 1100px;
+    border-style: hidden;
+    color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px #e4e4e4;
+    
+    
+}
+
+
+.data th,
+.data td{
+    border-top: 3px solid #e4e4e4;
+}
+
+.data th{
+    text-align: left;
+    font-weight: 500;
+    padding: 18px 16px;
+    width: 500px;
+    
+}
+
+.data th + th + th{
+    width: auto;
+}
+
+.data td {
+    padding: 8px 16px;
+}
+
+.last-item{
+    text-align: center;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 6px 18px;
+    border-radius: 12px;
+}
+
+.btn.online{
+    background-color: lightgreen;
+    color: green;
+}
+
+.btn.offline{
+    background: lightcoral;
+    
+}
+
+.btn.stay{
+    background: #EDEDFE;
+    color: #605DEC;
+}
+
+.btn.not{
+    background: #FFF4E4;
+    color: #E99518;
+}
+
+.btn.spy{
+    background-color: #F8F9FB;
+    color: #BDBCDB;
+}
